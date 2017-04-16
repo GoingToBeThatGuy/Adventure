@@ -14,7 +14,7 @@ template<class Temp>
 inline Temp Basic_Functions::Confirm(std::string Prompt, Temp given){
 	char choice;
 	std::cout << "Confirm: " << given << "? (Y/N)" << std::endl;
-	cin >> choice;
+	std::cin >> choice;
 	switch (choice) {
 	case 'Y':
 		return given;

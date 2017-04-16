@@ -19,7 +19,6 @@ void CharacterStartUp::CharacterCreation() {
 	Prompt = "Whats your name?";
 	std::cout << Prompt << std::endl;
 	Name = Confirm(Prompt, Name);
-
 }
 
 void CharacterStartUp::CharacterGetFile() {
