@@ -29,3 +29,4 @@ inline Temp Basic_Functions::Confirm(std::string Prompt, Temp given){
 		return Confirm(Prompt, given);
 	}
 	return Temp();
+}
