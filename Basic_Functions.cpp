@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "Basic_Functions.h"
 #include <iostream>
 
