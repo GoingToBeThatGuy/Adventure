@@ -28,6 +28,12 @@ Temp Basic_Functions ::Confirm(std::string Prompt, Temp given) {
 		return given;
 		break;
 	case 'N':
-
+		std::cout << Prompt << std::endl;
+		return Confirm(Prompt, given);
+		break;
+	default:
+		std::cout << "Not a correct answer, try again..." << std::endl << std::endl;
+		std::cout << Prompt << std::endl;
+		return Confirm(Prompt, given);
 	}
 }
