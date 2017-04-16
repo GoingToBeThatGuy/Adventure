@@ -18,22 +18,3 @@ void Basic_Functions::ClearScreen() {
 		std::cout << x << std::endl;
 	}
 }
-template <class Temp>
-Temp Basic_Functions ::Confirm(std::string Prompt, Temp given) {
-	char choice;
-	std::cout << "Confirm: " << given << "? (Y/N)" << std::endl;
-	cin >> choice;
-	switch choice{
-	case 'Y':
-		return given;
-		break;
-	case 'N':
-		std::cout << Prompt << std::endl;
-		return Confirm(Prompt, given);
-		break;
-	default:
-		std::cout << "Not a correct answer, try again..." << std::endl << std::endl;
-		std::cout << Prompt << std::endl;
-		return Confirm(Prompt, given);
-	}
-}
